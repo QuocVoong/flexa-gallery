@@ -1,9 +1,6 @@
 import sharp from 'sharp';
 import axios from 'axios';
 
-// Convert option in a string format to a key-value pair
-// key=value   { [key]: value }
-// key         { [key]: true }
 const optionToKeyVal = (option) =>
   ((split) =>
     split.length > 0
@@ -23,8 +20,7 @@ export default async (request, response) => {
 
   const decodedUrl = decodeURIComponent(imageUrl);
 
-  const readStream = await fetch(decodedUrl);
-  // const readStream = await axios({url: decodedUrl, responseType: 'stream'});
+  const readStream = await axios({url: decodedUrl, responseType: 'stream'});
 
   // handling our image processing using sharp
   const parsedOptions = parseOptions(options);

@@ -13,14 +13,19 @@ const navItems = [
     eventKey: 0
   },
   {
+    name:     'Gallery',
+    to:       '/gallery',
+    eventKey: 1
+  },
+  {
     name:     'About',
     to:       '/about',
-    eventKey: 1
+    eventKey: 2
   },
   {
     name:     'Features',
     to:       '/features',
-    eventKey: 2
+    eventKey: 3
   },
   {
     name:     'Signup',
