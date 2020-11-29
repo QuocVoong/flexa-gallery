@@ -1,10 +1,9 @@
 import React from 'react';
 
-export default function Home() {
-
+export default function Feature() {
   return (
     <div>
-      index
+      Feature
     </div>
   )
 }
